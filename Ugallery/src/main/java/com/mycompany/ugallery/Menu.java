@@ -1,10 +1,12 @@
 package com.mycompany.ugallery;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class Menu extends javax.swing.JFrame {
     public static String user;
     listaEnlazada listaUsuarios = new listaEnlazada();
+    public static ArrayList <user> listaUsers = new ArrayList <>();
     
     public Menu() {
         initComponents();
@@ -112,6 +114,8 @@ public class Menu extends javax.swing.JFrame {
         listaUsuarios.add(user);
         listaUsuarios.printlist();
         biblioteca newframe = new biblioteca();
+        user us = new user(user);
+        listaUsers.add(us);
         newframe.setVisible(true);
         this.dispose();
         } else{
