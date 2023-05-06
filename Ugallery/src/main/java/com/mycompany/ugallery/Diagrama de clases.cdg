@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.ugallery">
+  <ClassDiagramComponents>
+    <Class name="biblioteca" package="com.mycompany.ugallery" visibility="public" xPosition="1668.0" yPosition="48.0">
+      <Fields>
+        <Field name="model" type="DefaultTableModel" visibility="package"/>
+        <Field name="listaCategorias" type="ArrayList&lt;categoria&gt;" visibility="public" isStatic="true"/>
+        <Field name="cat" type="String" visibility="public" isStatic="true"/>
+        <Field name="indice" type="int" visibility="public" isStatic="true"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton6" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton7" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton8" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTable1MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="formWindowOpened" returnType="void" visibility="private">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="jButton6ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton7ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton8ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="BmpHandlerCopy" package="com.mycompany.ugallery" visibility="public" xPosition="2046.0" yPosition="1190.0">
+      <Fields>
+        <Field name="filebytes" type="byte[]" visibility="protected"/>
+        <Field name="copyname" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="imagename"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="readFile" returnType="void" visibility="public"/>
+        <Method name="generateFiles" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="categoria" package="com.mycompany.ugallery" visibility="public" xPosition="673.0" yPosition="560.0">
+      <Fields>
+        <Field name="usuario" type="String" visibility="public"/>
+        <Field name="nombre" type="String" visibility="public"/>
+        <Field name="imagenes" type="listaDoble" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="usuario"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getListImagenes" returnType="listaDoble" visibility="public"/>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="setImagenes" returnType="void" visibility="public">
+          <Argument type="listaDoble" name="imagenes"/>
+        </Method>
+        <Method name="getUsuario" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="convertidor" package="com.mycompany.ugallery" visibility="public" xPosition="13.0" yPosition="2.0">
+      <Fields>
+        <Field name="buttonGroup1" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jComboBox1" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jComboBox2" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jProgressBar1" type="javax.swing.JProgressBar" visibility="private"/>
+        <Field name="jRadioButton1" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jRadioButton2" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jRadioButton3" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jRadioButton4" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jRadioButton5" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jTextArea1" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="indice" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="JTextArea" name="textArea"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="run" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="editor" package="com.mycompany.ugallery" visibility="public" xPosition="827.0" yPosition="2.0">
+      <Fields>
+        <Field name="filePath" type="String" visibility="public" isStatic="true"/>
+        <Field name="name" type="String" visibility="public" isStatic="true"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton6" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton7" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton6ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton7ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EstructuraDeDatos" package="com.mycompany.ugallery" visibility="public" isAbstract="true" xPosition="254.0" yPosition="646.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="index" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="add" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="Object" name="e"/>
+        </Method>
+        <Method name="peek" returnType="Object" visibility="public" isAbstract="true"/>
+        <Method name="find" returnType="Object" visibility="public" isAbstract="true">
+          <Argument type="Object" name="e"/>
+        </Method>
+        <Method name="getNext" returnType="Object" visibility="public" isAbstract="true"/>
+        <Method name="getSize" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="get" returnType="Object" visibility="public" isAbstract="true">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="pop" returnType="Object" visibility="public" isAbstract="true"/>
+        <Method name="delete" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="Object" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ImageHandler" package="com.mycompany.ugallery" visibility="public" isAbstract="true" xPosition="1622.0" yPosition="1173.0">
+      <Fields>
+        <Field name="handledFileName" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="filename"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFileName" returnType="String" visibility="public" isFinal="true"/>
+        <Method name="readFile" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="generateFiles" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="JPEGHandler" package="com.mycompany.ugallery" visibility="public" xPosition="2033.0" yPosition="1039.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="runHandler" returnType="void" visibility="public" isStatic="true">
+          <Argument type="ImageHandler" name="imgh"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="JPEGImageHandlerBN" package="com.mycompany.ugallery" visibility="public" xPosition="1247.0" yPosition="1162.0">
+      <Fields>
+        <Field name="nombreCorto" type="String" visibility="package"/>
+        <Field name="jpg" type="BufferedImage" visibility="package"/>
+        <Field name="bmp" type="BufferedImage" visibility="package"/>
+        <Field name="bmpTemporal" type="File" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="filename"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="readFile" returnType="void" visibility="public"/>
+        <Method name="generateFiles" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="listaDoble" package="com.mycompany.ugallery" visibility="public" xPosition="470.0" yPosition="955.0">
+      <Fields>
+        <Field name="head" type="nodo2" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="String" name="valor"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="int" name="indice"/>
+        </Method>
+        <Method name="printListNext" returnType="void" visibility="public"/>
+        <Method name="printListNext" returnType="void" visibility="public">
+          <Argument type="int" name="indice"/>
+          <Argument type="JLabel" name="imagen"/>
+        </Method>
+        <Method name="size" returnType="int" visibility="public"/>
+        <Method name="printListPrev" returnType="void" visibility="public"/>
+        <Method name="printListNext" returnType="void" visibility="public">
+          <Argument type="int" name="indice"/>
+          <Argument type="JTextArea" name="area"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="listaEnlazada" package="com.mycompany.ugallery" visibility="public" xPosition="1763.0" yPosition="814.0">
+      <Fields>
+        <Field name="head" type="nodo" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="String" name="valor"/>
+        </Method>
+        <Method name="remove" returnType="void" visibility="public">
+          <Argument type="int" name="indice"/>
+        </Method>
+        <Method name="printlist" returnType="void" visibility="public"/>
+        <Method name="buscar" returnType="boolean" visibility="public">
+          <Argument type="String" name="valor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Menu" package="com.mycompany.ugallery" visibility="public" xPosition="999.0" yPosition="707.0">
+      <Fields>
+        <Field name="user" type="String" visibility="public" isStatic="true"/>
+        <Field name="listaUsuarios" type="listaEnlazada" visibility="package"/>
+        <Field name="listaUsers" type="ArrayList&lt;user&gt;" visibility="public" isStatic="true"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="nodo" package="com.mycompany.ugallery" visibility="public" xPosition="2072.0" yPosition="825.0">
+      <Fields>
+        <Field name="valor" type="String" visibility="public"/>
+        <Field name="next" type="nodo" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="valor"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="nodo2" package="com.mycompany.ugallery" visibility="public" xPosition="161.0" yPosition="1003.0">
+      <Fields>
+        <Field name="valor" type="String" visibility="public"/>
+        <Field name="next" type="nodo2" visibility="public"/>
+        <Field name="prev" type="nodo2" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="valor"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Ugallery" package="com.mycompany.ugallery" visibility="public" xPosition="30.0" yPosition="668.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="user" package="com.mycompany.ugallery" visibility="public" xPosition="951.0" yPosition="1141.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="listaUsers" source="com.mycompany.ugallery.Menu" target="com.mycompany.ugallery.user" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;user&gt;"/>
+    <UseRelation source="com.mycompany.ugallery.convertidor" target="com.mycompany.ugallery.editor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="head" source="com.mycompany.ugallery.listaEnlazada" target="com.mycompany.ugallery.nodo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mycompany.ugallery.biblioteca" target="com.mycompany.ugallery.editor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="imagenes" source="com.mycompany.ugallery.categoria" target="com.mycompany.ugallery.listaDoble" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mycompany.ugallery.editor" target="com.mycompany.ugallery.editor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.mycompany.ugallery.BmpHandlerCopy" target="com.mycompany.ugallery.ImageHandler"/>
+    <HasRelation name="next" source="com.mycompany.ugallery.nodo" target="com.mycompany.ugallery.nodo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mycompany.ugallery.Menu" target="com.mycompany.ugallery.editor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.mycompany.ugallery.JPEGImageHandlerBN" target="com.mycompany.ugallery.ImageHandler"/>
+    <HasRelation name="head" source="com.mycompany.ugallery.listaDoble" target="com.mycompany.ugallery.nodo2" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mycompany.ugallery.categoria" target="com.mycompany.ugallery.listaDoble" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaCategorias" source="com.mycompany.ugallery.biblioteca" target="com.mycompany.ugallery.categoria" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;categoria&gt;"/>
+    <HasRelation name="next" source="com.mycompany.ugallery.nodo2" target="com.mycompany.ugallery.nodo2" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="prev" source="com.mycompany.ugallery.nodo2" target="com.mycompany.ugallery.nodo2" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaUsuarios" source="com.mycompany.ugallery.Menu" target="com.mycompany.ugallery.listaEnlazada" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mycompany.ugallery.JPEGHandler" target="com.mycompany.ugallery.ImageHandler" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
