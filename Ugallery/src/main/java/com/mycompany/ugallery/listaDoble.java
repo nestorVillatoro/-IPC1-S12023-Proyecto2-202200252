@@ -1,5 +1,6 @@
 package com.mycompany.ugallery;
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -74,8 +75,10 @@ public class listaDoble {
             System.out.println(actual.valor);
             File archivoImagen = new File(actual.valor);
             BufferedImage img = ImageIO.read(archivoImagen);
-            ImageIcon imagenIcono = new ImageIcon(img);
-            imagen.setIcon(imagenIcono);
+            ImageIcon imageIcono = new ImageIcon(img);
+            Image imagenSize = imageIcono.getImage().getScaledInstance(imagen.getWidth(), imagen.getHeight(), Image.SCALE_SMOOTH);
+            ImageIcon imagenNewSize = new ImageIcon(imagenSize);
+            imagen.setIcon(imagenNewSize);
             break;
         }
         actual = actual.next;
